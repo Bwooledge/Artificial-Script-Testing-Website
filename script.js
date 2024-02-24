@@ -16,7 +16,12 @@ if (document.cookie != "") {
   if (pw != document.cookie) {
     document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.";
     document.getElementById("initiate").style.display = "none";
-    throw new Error("Second attempts are not allowed.");
+    for(let i = 0; i < 10000; i++)
+      setTimeout(function(){
+        document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.";
+        document.getElementById("initiate").style.display = "none";
+        document.getElementById("start").style.display = "none";
+      }, 1000);
   }
 }
 
