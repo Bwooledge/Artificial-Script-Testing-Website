@@ -11,16 +11,18 @@ let group,
 
 if (document.cookie != "") {
   let pw = prompt(
-    "Sorry, you can't take this test twice. If your first attempt was messed up by your test taking environment or a technical error or some other anomaly, email s122585@ltisdschools.net for a second attempt.",
+    "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.",
   );
   if (pw != document.cookie) {
+    document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.";
+    document.getElementById("initiate").style.display = "none";
     throw new Error("Second attempts are not allowed.");
   }
 }
 
 function assignVariables() {
   let g = prompt(
-    "Enter A if you are part of the artificial alphabet group and S if you are part of the artificial syllabary group",
+    "Enter A if you are in the alphabet group and S if you are in the syllabary group",
   );
   group = 2;
   if (g == "A" || g == "a") {
@@ -515,7 +517,7 @@ function endPCE() {
   document.getElementById("start").onclick = startPCA;
   document.getElementById("instructions").style.display = "block";
   document.getElementById("instructions").textContent =
-    "Now for the artificial script phoneme counting. The test will be the same as before, but now you will be presented with words written in the artificial script";
+    "Now for the artificial script phoneme counting. The test will be the same as before, but now you will be presented with words written in the artificial script.";
 }
 function endPCA() {
   question_number = 0;
@@ -645,7 +647,7 @@ function endAVE() {
   document.getElementById("answer_container").style.display = "none";
   document.getElementById("start").onclick = startAVA;
   document.getElementById("instructions").textContent =
-    "Now for the artificial auditory-visual matching. The test will be the same as before, but now you will hear words with the artificial sound system and you must identify answers in the artificial script. The test will begin immediately after you click the button below.";
+    "Now for the artificial auditory-visual matching. The test will be the same as before, but now answers will appear in the artificial script. The test will begin immediately after you click the button below.";
 }
 function endAVA() {
   sound.playbackRate = 1.0;
