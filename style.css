@@ -59,12 +59,15 @@ h3 {
   display: none;
   margin-top: 2cap;
 }
+
 #answer1 {
   margin-left: 28.5vmax;
 }
+
 #answer3 {
   margin-left: 28.5vmax;
 }
+
 .answer {
   margin: 1vmax;
   text-align: center;
@@ -73,6 +76,7 @@ h3 {
   height: 12vmax;
   padding: 0vmax;
 }
+
 .imganswer {
   display: none;
 }
@@ -91,7 +95,10 @@ h3 {
   width: 80vmax;
 }
 
-#img1, #img2, #img3, #img4 {
+#img1,
+#img2,
+#img3,
+#img4 {
   margin: auto;
   max-width: 15vmax;
   max-height: 9vmax;
@@ -104,6 +111,33 @@ h3 {
   margin-top: 16vmax;
   height: 15vmax;
   width: auto;
+}
+
+#phoneme_container {
+  display: none;
+  padding-top: 4vmax;
+  text-align: center;
+  margin: auto;
+}
+
+#number_input {
+  border-radius: 0.5vmax;
+  border-style: solid;
+  width: 6vmax;
+  height: 6.75vmax;
+  border-width: 0.5vmax;
+  border-color: black;
+  font-size: 4vmax;
+  text-align: center;
+}
+
+#submit_number_input {
+  font-weight: bold;
+  width: 12vmax;
+  height: 8vmax;
+  border-radius: 1vmax;
+  padding: auto;
+  font-size: 2.5vmax;
 }
 
 button {
