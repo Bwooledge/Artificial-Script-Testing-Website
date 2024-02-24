@@ -445,7 +445,7 @@ function startPCE() {
   document.getElementById("start").style.display = "none";
   document.getElementById("word").style.display = "block";
   document.addEventListener("keypress", inputPCE);
-  document.getElementById("phoneme_container").style.display = "block";
+  document.getElementById("number_input").style.display = "block";
   nextPCE();
 }
 function startPCA() {
@@ -454,8 +454,7 @@ function startPCA() {
   document.getElementById("start").style.display = "none";
   document.getElementById("artificial_word").style.display = "block";
   document.addEventListener("keypress", inputPCA);
-  document.getElementById("phoneme_container").style.display = "block";
-  document.getElementById("submit_number_input").onclick = inputPCA(document.getElementById('number_input').value);
+  document.getElementById("number_input").style.display = "block";
   nextPCA();
 }
 function nextPCE() {
@@ -466,8 +465,11 @@ function nextPCE() {
     return;
   }
   document.getElementById("word").style.display = "none";
+  document.getElementById("number_input").value = "";
+  document.getElementById("number_input").style.display = "none";
   setTimeout(function () {
     document.getElementById("word").style.display = "block";
+    document.getElementById("number_input").style.display = "block";
     startTimer();
   }, 250);
   document.getElementById("word").textContent =
@@ -481,8 +483,11 @@ function nextPCA() {
     return;
   }
   document.getElementById("artificial_word").style.display = "none";
+  document.getElementById("number_input").value = "";
+  document.getElementById("number_input").style.display = "none";
   setTimeout(function () {
     document.getElementById("artificial_word").style.display = "block";
+    document.getElementById("number_input").style.display = "block";
     startTimer();
   }, 250);
   document.getElementById("artificial_word").src =
@@ -512,7 +517,7 @@ function inputPCA(event) {
 function endPCE() {
   question_number = 0;
   document.getElementById("word").style.display = "none";
-  document.getElementById("phoneme_container").style.display = "none";
+  document.getElementById("number_input").style.display = "none";
   document.getElementById("start").style.display = "block";
   document.getElementById("start").onclick = startPCA;
   document.getElementById("instructions").style.display = "block";
@@ -522,7 +527,7 @@ function endPCE() {
 function endPCA() {
   question_number = 0;
   document.getElementById("artificial_word").style.display = "none";
-  document.getElementById("phoneme_container").style.display = "none";
+  document.getElementById("number_input").style.display = "none";
   document.getElementById("start").style.display = "block";
   document.getElementById("start").onclick = startAVE;
   document.getElementById("instructions").style.display = "block";
