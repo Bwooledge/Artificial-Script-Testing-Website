@@ -127,6 +127,10 @@ h3 {
   text-align: center;
 }
 
+html {
+  text-align: center;
+}
+
 button {
   font-family: "Rubik", sans-serif;
   background-color: #7188fe;
