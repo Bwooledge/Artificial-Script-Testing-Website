@@ -1,0 +1,127 @@
+* {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 2.5vmax;
+  width: 70vmax;
+  padding-top: 5vmax;
+}
+
+h3 {
+  margin: auto;
+  text-align: center;
+  font-size: 2.5vmax;
+}
+
+#replay_audio {
+  display: none;
+  margin: auto;
+  margin-top: 4vmax;
+  font-size: 6vmax;
+  padding-left: 1vmax;
+  padding-top: 0.5vmax;
+  text-align: center;
+  width: 10vmax;
+  height: 10vmax;
+  border-radius: 10vmax;
+}
+
+#initiate {
+  font-weight: bold;
+  font-size: 3vmax;
+  margin-top: 2vmax;
+  text-align: center;
+  width: 20vmax;
+  height: 6vmax;
+  border-radius: 1vmax;
+}
+
+#start {
+  display: none;
+  font-weight: bold;
+  font-size: 3vmax;
+  margin: auto;
+  margin-top: 2vmax;
+  text-align: center;
+  width: 20vmax;
+  height: 6vmax;
+  border-radius: 1vmax;
+}
+
+#button_container {
+  text-align: center;
+}
+
+#answer_container {
+  display: none;
+  margin-top: 2cap;
+}
+#answer1 {
+  margin-left: 28.5vmax;
+}
+#answer3 {
+  margin-left: 28.5vmax;
+}
+.answer {
+  margin: 1vmax;
+  text-align: center;
+  border-radius: 1vmax;
+  width: 20vmax;
+  height: 12vmax;
+  padding: 0vmax;
+}
+.imganswer {
+  display: none;
+}
+
+#word {
+  display: none;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.5vmax;
+  margin-top: 16vmax;
+}
+
+#test_ID {
+  display: none;
+  width: 80vmax;
+}
+
+#img1, #img2, #img3, #img4 {
+  margin: auto;
+  max-width: 15vmax;
+  max-height: 9vmax;
+  height: auto;
+}
+
+#artificial_word {
+  display: none;
+  margin: auto;
+  margin-top: 16vmax;
+  height: 15vmax;
+  width: auto;
+}
+
+button {
+  font-family: "Rubik", sans-serif;
+  background-color: #7188fe;
+  color: black;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5vmax;
+}
+
+button:active {
+  background-color: #5162b8;
+  transform: scale(0.97);
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 0;
+}
