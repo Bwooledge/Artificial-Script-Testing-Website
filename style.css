@@ -115,7 +115,6 @@ h3 {
 
 #number_input {
   display: none;
-  margin: auto;
   padding-top: 4max;
   border-radius: 0.5vmax;
   border-style: solid;
@@ -127,7 +126,7 @@ h3 {
   text-align: center;
 }
 
-html {
+#input_container {
   text-align: center;
 }
 
