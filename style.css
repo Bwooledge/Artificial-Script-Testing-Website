@@ -113,14 +113,9 @@ h3 {
   width: auto;
 }
 
-#phoneme_container {
-  display: none;
-  padding-top: 4vmax;
-  text-align: center;
-  margin: auto;
-}
-
 #number_input {
+  display: none;
+  padding-top: 4max;
   border-radius: 0.5vmax;
   border-style: solid;
   width: 6vmax;
@@ -129,15 +124,6 @@ h3 {
   border-color: black;
   font-size: 4vmax;
   text-align: center;
-}
-
-#submit_number_input {
-  font-weight: bold;
-  width: 12vmax;
-  height: 8vmax;
-  border-radius: 1vmax;
-  padding: auto;
-  font-size: 2.5vmax;
 }
 
 button {
