@@ -11,14 +11,14 @@ let group,
 
 if (document.cookie != "") {
   let pw = prompt(
-    "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.",
+    "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.",
   );
   if (pw != document.cookie) {
-    document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.";
+    document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.";
     document.getElementById("initiate").style.display = "none";
     for(let i = 0; i < 10000; i++)
       setTimeout(function(){
-        document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up somehow, email s122585@ltisdschools.net for a second attempt.";
+        document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.";
         document.getElementById("initiate").style.display = "none";
         document.getElementById("start").style.display = "none";
       }, 1000);
@@ -33,7 +33,7 @@ function assignVariables() {
   if (g == "A" || g == "a") {
     group = 1;
     document.getElementById("instructions").textContent =
-      "You have selected the artificial alphabet group. Reload the page if that is incorrect. The first test is phoneme counting. You will see an English word and you will have to type the number of phonemes in the word. You can use the text box or just type it normally. You will be evaluated on accuracy and speed. The test will begin immediately when you click the button below.";
+      "You have selected the alphabet group. Reload the page if that is incorrect. The first test is phoneme counting. You will see an English word and you will have to type the number of phonemes in the word. You can use the text box or just type it normally. You will be evaluated on accuracy and speed. The test will begin immediately when you click the button below.";
     wordsPCA = [
       "APCA_1.png",
       "APCA_2.png",
@@ -130,7 +130,7 @@ function assignVariables() {
     ];
   } else {
     document.getElementById("instructions").textContent =
-      "You have selected the artificial syllabary group. Reload the page if that is incorrect. The first test is phoneme counting. You will see an English word and you will have to type the number of phonemes in the word. You can use the text box or just type it normally. You will be evaluated on accuracy and speed. The test will begin immediately when you click the button below.";
+      "You have selected the syllabary group. Reload the page if that is incorrect. The first test is phoneme counting. You will see an English word and you will have to type the number of phonemes in the word. You can use the text box or just type it normally. You will be evaluated on accuracy and speed. The test will begin immediately when you click the button below.";
     wordsPCA = [
       "SPC1.png",
       "SPC2.png",
