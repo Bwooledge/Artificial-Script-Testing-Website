@@ -743,8 +743,11 @@ function endSJ() {
   document.getElementById("instructions").style.display = "block";
   document.getElementById("artificial_word").style.display = "none";
   document.getElementById("answer_container").style.display = "none";
+  var link = document.createElement("a");
+  link.setAttribute("href", "https://forms.gle/J5ivEM4bDNRQsA7E9");
+  link.innerHTML = "this form";
   document.getElementById("instructions").textContent =
-    "You are done with the test! Below is your unique test ID. Either take a screenshot of the ID or send it to s122585@ltisdschools.net in an email. Thank you!";
+    "You are done with the test! Below is your unique test ID. Please send it to s122585@ltisdschools.net. If you have not done so already, please complete " + link + ". Thank you!";
   document.getElementById("test_ID").style.display = "block";
   let avgDelays = [
     average(delaysPC.slice(0, 5)),
