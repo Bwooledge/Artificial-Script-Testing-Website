@@ -9,23 +9,6 @@ let group,
   choicesSJ,
   randomArray5;
 
-//prevent second tries
-/*if (document.cookie != "") {
-  let pw = prompt(
-    "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.",
-  );
-  if (pw != document.cookie) {
-    document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.";
-    document.getElementById("initiate").style.display = "none";
-    for(let i = 0; i < 10000; i++)
-      setTimeout(function(){
-        document.getElementById("instructions").textContent = "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.";
-        document.getElementById("initiate").style.display = "none";
-        document.getElementById("start").style.display = "none";
-      }, 1000);
-  }
-}*/
-
 if (document.cookie != "" && document.cookie != "z") 
   for(int i = 0; i < 20; i++)
     alert("You have already taken the test and your test ID was " + document.cookie + ". Please send it to s122585@ltisdschools.net if you haven't done so already.");
