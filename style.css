@@ -128,6 +128,7 @@ h3 {
 }
 
 #input_container {
+  padding-top: 0.5vmax;
   margin: auto;
   text-align: center;
 }
