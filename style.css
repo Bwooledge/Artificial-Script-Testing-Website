@@ -108,10 +108,10 @@ h3 {
 #artificial_word {
   display: none;
   margin: auto;
-  margin-top: 14vmax;
+  margin-top: 12vmax;
   height: 12vmax;
   width: auto;
-  padding-bottom: 1.5vmax;
+  padding-bottom: 1vmax;
 }
 
 #number_input {
