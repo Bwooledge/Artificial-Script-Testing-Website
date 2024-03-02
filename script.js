@@ -9,7 +9,8 @@ let group,
   choicesSJ,
   randomArray5;
 
-if (document.cookie != "") {
+//prevent second tries
+/*if (document.cookie != "") {
   let pw = prompt(
     "Sorry, you can't take this test twice. If your first attempt was messed up, email s122585@ltisdschools.net for a second attempt.",
   );
@@ -23,6 +24,10 @@ if (document.cookie != "") {
         document.getElementById("start").style.display = "none";
       }, 1000);
   }
+}*/
+
+if (document.cookie != "" && document.cookie != "z") {
+  alert("You have already taken the test and your test ID was " + document.cookie + ". Please send it to s122585@ltisdschools.net if you haven't done so already.");
 }
 
 function assignVariables() {
@@ -739,7 +744,6 @@ function inputSJ(event) {
   nextSJ();
 }
 function endSJ() {
-  document.cookie = "z";
   document.getElementById("instructions").style.display = "block";
   document.getElementById("artificial_word").style.display = "none";
   document.getElementById("answer_container").style.display = "none";
@@ -776,4 +780,5 @@ function endSJ() {
     "z" +
     englishErrors.toString(16);
   document.getElementById("test_ID").textContent = "Test ID: " + testID;
+  document.cookie = testID;
 }
