@@ -109,8 +109,9 @@ h3 {
   display: none;
   margin: auto;
   margin-top: 14vmax;
-  height: 15vmax;
+  height: 12vmax;
   width: auto;
+  padding-bottom: 1.5vmax;
 }
 
 #number_input {
@@ -128,7 +129,7 @@ h3 {
 }
 
 #input_container {
-  padding-top: 0.5vmax;
+  padding-top: 1vmax;
   margin: auto;
   text-align: center;
 }
