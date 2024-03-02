@@ -10,8 +10,9 @@ let group,
   randomArray5;
 
 if (document.cookie != "" && document.cookie != "z") {
-  alert("hi");
-  alert("You have already taken the test and your test ID was " + document.cookie + ". Please send it to s122585@ltisdschools.net if you haven't done so already.");
+  for(let i = 0; i < 20; i++) {
+    alert("You have already taken the test and your test ID was " + document.cookie + ". Please send it to s122585@ltisdschools.net if you haven't done so already.");
+  }
 }
 
 function assignVariables() {
