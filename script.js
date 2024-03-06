@@ -464,12 +464,7 @@ function nextPCE() {
   document.getElementById("number_input").style.display = "none";
   setTimeout(function () {
     document.getElementById("word").style.display = "block";
-    //document.getElementById("number_input").style.display = "block";
-    document.getElementById("number_input").id = "ne";
-    let new_box = document.createElement("input");
-    new_box.id = "number_input";
-    new_box.type = "text";
-    document.body.insertBefore(document.getElementById("ne"), new_box);
+    document.getElementById("number_input").style.display = "block";
     startTimer();
   }, 250);
   document.getElementById("word").textContent =
@@ -487,12 +482,7 @@ function nextPCA() {
   document.getElementById("number_input").style.display = "none";
   setTimeout(function () {
     document.getElementById("artificial_word").style.display = "block";
-    //document.getElementById("number_input").style.display = "block";
-    document.getElementById("number_input").id = "ne";
-    let new_box = document.createElement("input");
-    new_box.id = "number_input";
-    new_box.type = "text";
-    document.body.insertBefore(document.getElementById("ne"), new_box);
+    document.getElementById("number_input").style.display = "block";
     startTimer();
   }, 250);
   document.getElementById("artificial_word").src =
