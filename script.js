@@ -465,6 +465,7 @@ function nextPCE() {
   setTimeout(function () {
     document.getElementById("word").style.display = "block";
     document.getElementById("number_input").style.display = "block";
+    document.getElementById("number_input").value = "";
     startTimer();
   }, 250);
   document.getElementById("word").textContent =
@@ -483,6 +484,7 @@ function nextPCA() {
   setTimeout(function () {
     document.getElementById("artificial_word").style.display = "block";
     document.getElementById("number_input").style.display = "block";
+    document.getElementById("number_input").value = "";
     startTimer();
   }, 250);
   document.getElementById("artificial_word").src =
